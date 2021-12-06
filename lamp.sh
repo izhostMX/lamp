@@ -55,30 +55,30 @@ show_help(){
     printf "
 Usage  : $0 [Options] [Parameters]
 Options:
--h, --help                      Print this help text and exit
--v, --version                   Print program version and exit
---apache_option [1-2]           Apache server version
---apache_modules [mod name]     Apache modules: mod_wsgi, mod_security, mod_jk
---db_option [1-9]               Database version
---db_data_path [location]       Database Data Location. for example: /data/db
---db_root_pwd [password]        Database root password. for example: lamp.sh
---php_option [1-8]              PHP version
---php_extensions [ext name]     PHP extensions:
+-h, --help                      Imprime este texto de ayuda y sal
+-v, --version                   Imprime la versión del programa y sal
+--apache_option [1-2]           Versión del servidor Apache
+--apache_modules [mod name]     Modulos Apache: mod_wsgi, mod_security, mod_jk
+--db_option [1-9]               Version de la Base de Datos
+--db_data_path [location]       Ubicación de los datos de la base de datos. por ejemplo: /data/db
+--db_root_pwd [password]        Contraseña de root mysql. for example: lamp.sh
+--php_option [1-8]              Version PHP
+--php_extensions [ext name]     PHP extensiones:
                                 apcu, xcache, ioncube, pdflib, imagick, gmagick
                                 memcached, redis, mongodb, libsodium, swoole
                                 yaf, yar, phalcon, grpc, xdebug
---db_manage_modules [mod name]  Database management modules: phpmyadmin, adminer
---kodexplorer_option [1-2]      KodExplorer version
+--db_manage_modules [mod name]  Gestor de Base de Datos: phpmyadmin, adminer
+--kodexplorer_option [1-2]      KodExplorer
 
 Parameters:
 "
-    echo "--apache_option [1-2], please select a available Apache version"
+    echo "--apache_option [1-2], seleccione una versión de Apache disponible"
     show_parameters apache
-    echo "--db_option [1-9], please select a available Database version"
+    echo "--db_option [1-9], por favor seleccione una versión de base de datos disponible"
     show_parameters mysql
-    echo "--php_option [1-8], please select a available PHP version"
+    echo "--php_option [1-8], seleccione una versión de PHP disponible"
     show_parameters php
-    echo "--kodexplorer_option [1-2], please select a available KodExplorer version"
+    echo "--kodexplorer_option [1-2], seleccione una versión de KodExplorer disponible"
     show_parameters kodexplorer
 }
 
