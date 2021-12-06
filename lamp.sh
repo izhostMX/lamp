@@ -47,9 +47,9 @@ show_parameters(){
 show_help(){
     echo
     echo "+-------------------------------------------------------------------+"
-    echo "| Auto Install LAMP(Linux + Apache + MySQL/MariaDB + PHP )          |"
-    echo "| Website: https://lamp.sh                                          |"
-    echo "| Author : Teddysun <i@teddysun.com>                                |"
+    echo "| Auto instalador LAMP(Linux + Apache + MySQL/MariaDB + PHP )          |"
+    echo "| 2389.tech by InterZONE                                        |"
+    echo "| Creador por InterZONE Web Service                                |"
     echo "+-------------------------------------------------------------------+"
     echo
     printf "
